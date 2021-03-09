@@ -39,16 +39,16 @@ export default {
           value: 'period',
         },
         {
-          text: '30日でかかる手数料',
-          align: 'start',
-          sortable: false,
-          value: 'totalFee',
-        },
-        {
           text: '周期毎ATOM',
           align: 'start',
           sortable: false,
           value: 'rewardByPeriod',
+        },
+        {
+          text: '30日でかかる手数料',
+          align: 'start',
+          sortable: false,
+          value: 'totalFee',
         },
         {
           text: '30日で得るATOM',
