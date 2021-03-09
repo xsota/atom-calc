@@ -15,6 +15,7 @@
             :items-per-page="366"
             :item-class="itemClass"
             hide-default-footer
+            mobile-breakpoint="0"
           >
           </v-data-table>
         </v-card-text>
