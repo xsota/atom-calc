@@ -17,6 +17,25 @@
             hide-default-footer
             mobile-breakpoint="0"
           >
+            <template #[`item.rewardByPeriod`]="{ item }">
+              {{ atom(item.rewardByPeriod) }}
+            </template>
+
+            <template #[`item.totalFee`]="{ item }">
+              {{ atom(item.totalFee) }}
+            </template>
+
+            <template #[`item.monthRewardAtom`]="{ item }">
+              {{ atom(item.monthRewardAtom) }}
+            </template>
+
+            <template #[`item.totalFeeYear`]="{ item }">
+              {{ atom(item.totalFeeYear) }}
+            </template>
+
+            <template #[`item.yearRewardAtom`]="{ item }">
+              {{ atom(item.yearRewardAtom) }}
+            </template>
           </v-data-table>
         </v-card-text>
       </v-card>
@@ -135,6 +154,9 @@ export default {
   methods: {
     itemClass(item) {
       return item.yearRewardAtom === this.best ? 'best' : ''
+    },
+    atom(amount) {
+      return parseFloat(amount).toFixed(6)
     },
   },
 }
