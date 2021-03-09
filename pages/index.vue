@@ -123,19 +123,6 @@ export default {
         const yearRewardAtom =
           this.amount * composedInterestRateYear - totalFeeYear - this.amount
 
-        // eslint-disable-next-line no-console
-        console.log('amount: ' + this.amount)
-
-        // eslint-disable-next-line no-console
-        console.log('periodInterestRate: ' + periodInterestRate)
-        // eslint-disable-next-line no-console
-        console.log('reinvestCount: ' + reinvestCount)
-        // eslint-disable-next-line no-console
-        console.log('composedInterestRate: ' + composedInterestRate)
-
-        // eslint-disable-next-line no-console
-        console.log('totalAtom: ' + monthRewardAtom)
-
         items.push({
           period: day + '日',
           totalFee,
