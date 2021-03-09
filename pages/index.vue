@@ -88,7 +88,7 @@ export default {
           value: 'yearRewardAtom',
         },
       ],
-      apy: 10.66,
+      apy: 10,
     }
   },
   computed: {
