@@ -4,9 +4,26 @@
       <v-card>
         <v-card-title class="headline">試算</v-card-title>
         <div class="d-flex">
-          <v-text-field v-model="amount" label="保持ATOM" class="mx-5" />
-          <v-text-field v-model="fee" label="fee" class="mr-5" />
-          <v-text-field v-model="apy" label="apy" class="mr-5" />
+          <v-text-field
+            v-model="amount"
+            type="number"
+            label="保持ATOM"
+            class="mx-5"
+          />
+          <v-text-field
+            v-model="fee"
+            label="fee"
+            type="number"
+            class="mr-5"
+            step="0.0001"
+          />
+          <v-text-field
+            v-model="apy"
+            label="apy"
+            class="mr-5"
+            type="number"
+            step="0.01"
+          />
         </div>
         <v-card-text>
           <v-data-table
