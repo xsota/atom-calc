@@ -18,7 +18,7 @@
             step="0.0001"
           />
           <v-text-field
-            v-model="apy"
+            v-model="APR"
             label="apy"
             class="mr-5"
             type="number"
