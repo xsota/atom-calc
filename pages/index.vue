@@ -69,7 +69,7 @@ export default {
       amount: 1000,
       headers: [
         {
-          text: '周期',
+          text: '複利周期',
           align: 'start',
           sortable: false,
           value: 'period',
