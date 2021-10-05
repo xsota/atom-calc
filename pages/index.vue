@@ -7,7 +7,7 @@
           <v-text-field
             v-model="amount"
             type="number"
-            label="保持ATOM"
+            label="Delegate ATOM"
             class="mx-5"
           />
           <v-text-field
@@ -81,7 +81,7 @@ export default {
           value: 'rewardByPeriod',
         },
         {
-          text: '30日でかかる手数料',
+          text: '30日でかかるGas代',
           align: 'start',
           sortable: false,
           value: 'totalFee',
