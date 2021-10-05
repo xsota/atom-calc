@@ -65,7 +65,7 @@ export default {
   components: {},
   data() {
     return {
-      fee: 0.0075,
+      fee: 0.00025,
       amount: 1000,
       headers: [
         {
