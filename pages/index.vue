@@ -93,7 +93,7 @@ export default {
           value: 'monthRewardAtom',
         },
         {
-          text: '365日でかかる手数料',
+          text: '365日でかかるGas代',
           align: 'start',
           sortable: false,
           value: 'totalFeeYear',
