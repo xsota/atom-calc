@@ -4,6 +4,9 @@
       <v-icon>mdi-calculator</v-icon>
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <v-chip>
+        {{ address }}
+      </v-chip>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -27,7 +30,13 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
+  computed: {
+    ...mapGetters('wallet', {
+      address: 'getEllipsisAddress',
+    }),
+  },
   data() {
     return {
       clipped: false,
